@@ -1,0 +1,17 @@
+$TTL 1d
+
+@               SOA     ns.breakit.ru. hariton27sy.breakit.ru. (1 1w 1d 4w 1d)
+@               NS      ns1
+@               NS      ns2
+ns1             A       43.42.44.42
+ns2             A       43.42.44.43
+
+
+@               A       45.137.148.18 ; здесь на самом деле есть сайт, но там ничего нет :)
+www             CNAME   @
+
+@               MX      10 mail
+mail            A       43.12.8.8
+
+subdomain       NS      ns.subdomain
+ns.subdomain    A       14.15.15.15
